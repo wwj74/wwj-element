@@ -1,0 +1,10 @@
+{
+  "buildCommand": "pnpm docs:build",
+  "outputDirectory": "docs-dist",
+  "installCommand": "pnpm install",
+  "frameworks": {
+    "rspress": {
+      "runtime": "nodejs20.x"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+---
+title: Button 按钮
+---
+
+import { Button } from '@wwj/components';
+
+## 代码示例
+
+### 按钮类型
+
+<div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+  <Button type="primary">主要按钮</Button>
+  <Button>默认按钮</Button>
+  <Button type="dashed">虚线按钮</Button>
+  <Button type="link">链接按钮</Button>
+</div>
+
+### 扩展类型
+
+<div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+  <Button type="second-primary">次级主要</Button>
+  <Button type="third-primary">三级主要</Button>
+  <Button type="warning">警告</Button>
+  <Button primary>无背景主要</Button>
+  <Button warning>无背景警告</Button>
+</div>
+
+### 按钮尺寸
+
+<div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center' }}>
+  <Button type="primary" size="38">38px</Button>
+  <Button type="primary" size="32">32px</Button>
+  <Button type="primary" size="28">28px</Button>
+  <Button type="primary" size="24">24px</Button>
+</div>
+
+## API
+
+该组件是在 antd 的 [Button](https://4x-ant-design.antgroup.com/components/button-cn/) 基础之上进行封装，antd 原有的 API 全部支持。
+
+### 扩展 API
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| primary | 设置主要按钮，和 type="primary" 不同，该方式无背景色 | boolean | - |
+| size | 设置按钮大小，只支持传递列出的枚举 | '38' \| '36' \| '34' \| '32' \| '30' \| '28' \| '26' \| '24' \| '22' \| '20' | - |
+| type | 扩展了 second-primary、third-primary、warning 类型 | string | - |
+| warning | 设置警告按钮，和 type="warning" 不同，该方式无背景色 | boolean | - |

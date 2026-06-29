@@ -1,0 +1,34 @@
+---
+title: 首页
+---
+
+# wwj-element
+
+一个基于 React + Ant Design 的 Monorepo 组件库学习项目。
+
+## 特性
+
+- **Monorepo 架构**：pnpm workspace 管理多包
+- **按需构建**：Rslib 产出 ESM + CJS 产物
+- **文档站**：Rspress 驱动，支持组件实时预览
+- **任务编排**：Nx 管理构建顺序与缓存
+
+## 快速开始
+
+```bash
+# 安装依赖
+pnpm install
+
+# 构建所有包（Nx 按依赖顺序执行）
+pnpm build
+
+# 启动文档站
+pnpm dev
+```
+
+## 包结构
+
+| 包名 | 说明 |
+| --- | --- |
+| @wwj/utils | 通用工具函数（createPrefixCls 等） |
+| @wwj/components | 基础组件库（Button 等） |

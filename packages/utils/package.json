@@ -1,0 +1,21 @@
+{
+  "name": "@wwj/utils",
+  "version": "0.0.1",
+  "description": "通用工具函数",
+  "type": "module",
+  "module": "./dist/es/index.js",
+  "main": "./dist/lib/index.cjs",
+  "types": "./dist/es/index.d.ts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "rslib build"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "@swc/helpers": "^0.5.15"
+  }
+}

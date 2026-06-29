@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "stripInternal": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "paths": {
+      "@wwj/utils": [
+        "./packages/utils/src/index.ts"
+      ],
+      "@wwj/utils/*": [
+        "./packages/utils/src/*"
+      ],
+      "@wwj/components": [
+        "./packages/components/src/index.ts"
+      ],
+      "@wwj/components/*": [
+        "./packages/components/src/*"
+      ]
+    }
+  },
+  "include": [
+    "**/src/**/*",
+    "**/docs/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

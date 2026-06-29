@@ -1,0 +1,27 @@
+{
+  "name": "@wwj/components",
+  "version": "0.0.1",
+  "description": "基础组件库",
+  "type": "module",
+  "module": "./dist/es/index.js",
+  "main": "./dist/lib/index.cjs",
+  "types": "./dist/es/index.d.ts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "rslib build"
+  },
+  "dependencies": {
+    "@swc/helpers": "^0.5.15",
+    "classnames": "^2.3.1"
+  },
+  "peerDependencies": {
+    "@wwj/utils": "workspace:^",
+    "antd": "^4.23.6",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  }
+}
